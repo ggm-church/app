@@ -1,0 +1,75 @@
+::ng-deep {
+    .quick-access {
+
+        .previous-chapter,
+        .next-chapter,
+        .bottom-acceess {
+            button {
+                width: 64px;
+                height: 64px;
+                padding: 0;
+            }
+
+            .material-symbols-outlined {
+                color: #fff;
+                font-size: 32px;
+                padding: 0;
+            }
+
+
+        }
+
+        .previous-chapter {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+
+        .next-chapter {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+
+        .bottom-acceess {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+
+            button {
+                // background-color: tan;
+                background-color: transparent;
+
+                .material-symbols-outlined {
+                    color: #bcbcbc;
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+
+    .mat-mdc-menu-panel {
+        min-width: 260px !important;
+        max-width: 360px !important;
+        height: auto;
+        min-height: 280px;
+        max-height: 300px;
+        padding-bottom: 20px;
+    }
+
+    .mat-mdc-menu-content {
+        padding: 0 !important;
+    }
+
+    .book-mark-title {
+        background: #1c222e;
+        color: #fff;
+    }
+
+    .delete-btn {
+        color: #cc9a9a;
+    }
+}

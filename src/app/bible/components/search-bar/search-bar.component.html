@@ -1,0 +1,15 @@
+<section class="search-sec mr-3 ">
+    <form class="wt-100">
+        <mat-form-field appearance="outline" class="search-book">
+            <input matInput 
+            [(ngModel)]="searchQuery" 
+            name="searchInput" 
+            (ngModelChange)="onSearchChange($event)" 
+            (ngModelOptions)="{ updateOn: 'blur' }" 
+            placeholder="Search book"
+            (keydown.enter)="onSearchClick()" 
+            #searchInput="ngModel">
+            <mat-icon matSuffix (click)="onSearchClick()">search</mat-icon>
+          </mat-form-field>
+    </form>
+</section>
